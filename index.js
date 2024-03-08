@@ -1,6 +1,7 @@
 function ValidateEmail(inputText)
 {
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var mailformat = require('string');
 if(inputText.value.match(mailformat))
 {
 alert("Valid email address!");
